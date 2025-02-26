@@ -1,7 +1,7 @@
 .header {
     height: 34vw;
     margin: 30px auto;
-    background: url("C:\Users\benga\OneDrive\Documents\Desktop\FireWebsite\frontend\src\assets\poster2_img.png") repeat;
+    background: url("src\assets\poster2_img.png") repeat;
     background-size: cover;
     /* background: orange; */
     
