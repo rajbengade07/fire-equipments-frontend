@@ -1,0 +1,77 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url("C:\Users\benga\OneDrive\Documents\Desktop\FireWebsite\frontend\src\assets\poster2_img.png") repeat;
+    background-size: cover;
+    /* background: orange; */
+    
+    position: relative;
+  }
+  .header-contents {
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+   
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+  }
+ 
+  .header-contents h2 {
+    font-weight: 700;
+    color: white;
+    text-shadow: #000000;
+    text-shadow: 1mm;
+    font-size: max(4.5vw, 22px);
+  }
+  
+  .header-contents p {
+    color: rgb(232, 232, 232);
+    text-shadow: #000000;
+    text-shadow: 1mm;
+    font-size: 1vw;
+  }
+  
+  .header-contents button {
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background: white;
+    font-size: clamp(13px, 1vw, 1vw);
+    border-radius: 50px;
+    color: #939393;
+    text-decoration: none;
+    outline: none; /* Remove focus outline */
+    border: none; /* Ensure no border */
+    transition: none; /* Ensure no animation */
+  }
+  
+  /* Optional: To handle focus state */
+  .header-contents button:focus {
+    outline: none; /* Additional focus outline removal */
+    box-shadow: none; /* Remove box-shadow if any */
+  }
+  
+  @media (max-width: 1050px) {
+    .header {
+      height: 38vw;
+    }
+    .header-contents {
+      max-width: 45%;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .header-contents {
+      max-width: 55%;
+    }
+    .header-contents p {
+      display: none;
+    }
+    .header-contents button {
+      padding: 2vw 4vw;
+    }
+  }
+  
